@@ -1,0 +1,91 @@
+/* main */
+.main .hd {
+	margin: 20px 0 20px;
+	height: 100px;
+	/* background-color: pink; */
+	text-align: center;
+	font-family:"Karla";
+}
+.main .hd h2{
+	font-size: 28px;
+	font-weight: 400;
+}
+.main .hd p{
+	margin-top: 5px;
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+.main .hd span{
+	color: #CB0162;
+	font-size: 18px;
+}
+.main .bd ul{
+	width: 1134px;
+	margin: 0 auto;
+	/* height不设置 */
+}
+.main .bd li{
+	height: 450px;
+	margin-bottom: 20px;
+}
+.main .bd li .text{
+	float: left;
+	padding: 60px 35px 0;
+	width: 566.71px;
+	height: 450px;
+	background-color:  #f8f5ef;
+}
+.main .bd li:nth-child(2n) .text{
+		float: right;
+}
+.main .bd  li .text h3{
+	margin: 32px 0 ;
+	font-size: 20px;
+	font-weight: 400;
+	color: #fd5f6a ;
+}
+.main .bd li .text h3 span{
+	margin-left: 10px;
+	font-size: 14px;
+	color: #fda1a7;
+}
+.main .bd  li .text p{
+	padding: 20px 0 50px;
+	font-size: 14px;
+	line-height: 1.88;
+	font-weight: 350;
+	text-indent: 2em;
+	color: gray;
+}
+.main .bd  li .text a{
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 16px;
+	/* border: 1px red solid; */
+	border: 1px #fd5f6a solid;
+	transition: all .5s;
+}
+.main .bd  li .text a:hover{
+	/* background-color:#fdcfc1; */
+	background-color: #656565;
+	border: 1px black solid;
+	color: #fff;
+}
+
+.main .bd li .img{
+	 float: left;
+	 width: 566.71px;
+	 height: 450px;
+ }
+.main .bd .img img{
+	width: 566.71px;
+	height: 450px;
+}
+
+
+
+
+
+
+

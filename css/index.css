@@ -1,0 +1,547 @@
+/* 放index页面的样式表 */
+/* banner */
+/* banner里面内容都用定位 */
+.banner{
+	height: 600px;
+	background-color: #f2eee4;
+}
+.banner .wrapper{
+	position: relative;
+	height: 600px;
+	width: 1300px;
+	overflow: hidden;
+}
+.banner .wrapper img{
+	width: 1300px;
+}
+/* 轮播图 */
+.wrapper #Carousel{  
+	height: 600px;
+	width: 3900px;  /* ul 的宽度 给无限宽放的图片就多*/
+}
+.wrapper #Carousel li{
+	float: left;
+}
+
+/* 侧边栏aside */
+.wrapper .aside{
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+	width: 235px;
+	height: 600px;
+	/* background-color: rgba(255,255,255,.4); */
+	/* background-color: rgba(255,255,255,.5); */
+	background-color: rgba(255,255,255,.6);
+}
+.banner .aside li {
+	height: 55px;
+	line-height: 55px;
+	list-style-type: none;
+}
+.banner .aside li a{
+	position: relative;
+	/*  block宽度和父级一样 */
+	display: block;
+	/* padding-left: 36px; */
+	padding-left: 45px;
+	
+	height: 55px;
+	color: #141414;
+	transition: color 0.35s;
+	
+}
+.banner .aside li a:hover{
+	color: #f83244;
+	background-color: #fff;
+}
+.banner .aside li span{
+	color: #6f6f6f;
+	margin-left: 35px;
+	font-size: 14px;
+}
+/* 侧边栏的 a的里面添加小图标 */
+.banner .aside a::before {
+	position: absolute;
+	top: 16px;
+	left: 8px;
+    content: '';
+    width: 20px;
+    height: 20px;
+	background-size: contain;
+    /* background-color: pink; */
+}
+.banner .aside li:nth-child(1) a::before{
+	background-image: url(../images/cehua.png);
+}
+.banner .aside li:nth-child(2) a::before{
+	background-image: url(../images/sheying.png);
+}
+.banner .aside li:nth-child(3) a::before{
+	background-image: url(../images/genzhuang.png);
+}
+.banner .aside li:nth-child(4) a::before{
+	background-image: url(../images/lifu.png);
+}
+.banner .aside li:nth-child(5) a::before{
+	background-image: url(../images/jiudian.png);
+}
+.banner .aside li:nth-child(6) a::before{
+	background-image: url(../images/zhuci.png);
+}
+.banner .aside li:nth-child(7) a::before{
+	background-image: url(../images/shici.png);
+}
+.banner .aside li:nth-child(8) a::before{
+	background-image: url(../images/yongpin.png);
+}
+.banner .aside li:nth-child(9) a::before{
+	background-image: url(../images/shexiang.png);
+}
+.banner .aside li:nth-child(10) a::before{
+	background-image: url(../images/qingjian.png);
+}
+/* 箭头 */
+.next,
+.prev{
+    position: absolute;
+    top: 245px;
+	right: 10px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255,255,255,.5);
+    background-image: url(../images/箭头.png);
+	background-repeat: no-repeat;
+    border-radius: 50%;
+
+    background-position: center center;
+}
+.prev{
+	left: 270px;
+	transform: rotate(180deg);
+}
+
+
+/* 圆点 */
+.banner ol {
+    position: absolute;
+    left: 607px;
+    bottom: 87px;
+
+    height: 10px;
+}
+.banner ol li {
+    float: left;
+    margin-right: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+	
+    cursor: pointer;  
+}
+/* .banner ol .current {
+    background-color: rgba(255, 255, 255, 1);
+} */
+
+/* tool */
+.tool{
+	height: 200px;
+}
+.tool li{
+	float: left;
+	margin-top: 30px;
+	margin-right: 57px;
+	width: 282px;
+	height: 136px;
+	border-radius: 5px;
+	overflow: hidden;
+	/* background-color: skyblue; */
+}
+.tool li:hover{
+	box-shadow: 0 8px 25px 3px #ededed;
+}
+.tool li:last-child{
+	margin-right: 0;
+}
+.tool li img{
+	width: 282px;
+	height: 136px;
+}
+
+/* weddingType */
+.weddingType #box1{
+		margin-top: 20px;
+		/* border:#666666 1px solid; */
+		width:1200px;
+		color:#ffffff;
+		position: relative;
+		white-space: nowrap;
+		font-size: 0;
+		overflow:hidden;
+}
+.weddingType #box1>div{
+	width: 2324px;  /* 等于7张图片的宽度加上水平外边距 */
+	display: inline-block;
+	padding: 10px 0;
+	cursor: pointer;
+}
+.weddingType #box1 img{
+	display: inline-block;
+	margin-right: 12px;
+	width: 320px;
+	border-radius: 10px;
+}
+.weddingType h5{
+	font-size:18px ;
+	text-align: center;
+	font-weight: 600;
+}
+.weddingType p{
+	margin: 10px 0;
+	font-family: "inherit";
+	text-indent: 2em;
+	line-height: 1.6;
+}
+.weddingType a[title]{
+	color: red;
+}
+/* dress */
+.dress,
+.weddingType,
+.marriageStrategy{
+	margin-top: 16px;
+	margin-bottom: 8px;
+}
+.dress h2,
+.weddingType h2,
+.marriageStrategy h2{
+	/* margin: 16px 0 6px; */
+	font-size:24px ;
+}
+.dress .dress_guest,
+.weddingType .westType,
+.marriageStrategy .strategyMain{
+	margin: 18px 0 ;
+	padding: 20px 22px 22px 22px;
+	background-color: #fff;
+}
+.dress .hd,
+.weddingType .hd{
+	height: 40px;
+	/* 顶部文字居中显示 */
+	line-height: 40px;
+}
+.dress .hd h3,
+.weddingType .hd h3{
+	float: left;
+	font-size: 20px;
+	font-weight: 600;
+}
+.dress .hd h3::before,
+.weddingType .hd h3::before{
+	content: '';
+	margin-right: 10px;
+	margin-bottom: 2px;
+	display: inline-block;
+	
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+	background-image: url(../images/dress.png);
+	background-size: contain;
+}
+/* 单独设置 特殊样式 */
+.weddingType .hd h3::before{
+	background-image: url(../images/结婚.png);
+}
+.dress .hd>a,
+.weddingType .hd>a,
+.marriageStrategy .right>a{
+	float: right;
+    color: #999;
+	font-size: 14px;
+}
+.dress .hd>a::after,
+.weddingType .hd>a::after,
+.marriageStrategy .right>a::after{
+	content: '';
+	margin-bottom: 2px;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-image: url(../images/小箭头.png);
+	background-size: contain;
+	vertical-align: middle;
+}
+.dress .bd .shang{
+	/* width: 1000px; */
+	margin-top: 10px;
+	text-align: center;
+	
+}
+.dress .bd .shang img{
+	width: 1000px
+}
+.dress .bd .shang h4{
+	font-size:28px;
+	line-height:1.3 ;
+	font-family: "Frutiger";
+}
+.dress .bd .shang p{
+	font-size: 18px;
+	line-height:1.2;
+	font-family: "Frutiger";
+}
+/* 下部分不设置高度 由内容撑开 */
+.dress .bd .xia ul{
+	margin-top: 20px;
+}
+.dress .bd .xia li{
+	position: relative; /* 相对定位，用于悬停效果 */
+	float: left; 
+	
+	margin-right: 20px;
+	width: 405px;
+	height: 337px;
+	/* background-color: pink; */
+	/* border-radius 加给父级要加overflow */
+	border-radius: 20px;
+	overflow: hidden;
+}
+.dress .bd .xia li:last-child{
+	margin-right: 0;
+}
+.dress .bd .xia li img{
+	transition: all ease .5s;
+	width: 405px;
+}
+.dress .bd .xia .dress_title{
+	/* border: 1px solid red ;用于看效果 */
+	position: absolute;
+	
+	opacity: 0;
+	color:#f86681;
+	font-size: 20px;
+	font-family: "Angellita";
+	font-weight: 500;
+	transition: all ease .5s;
+}
+.dress .bd li:nth-child(1) .dress_title{
+	/* top: 250px; 鼠标悬停时效果*/
+	top: -50px;
+	left: 20px;
+}
+.dress .bd li:nth-child(2) .dress_title{
+	top: 250px;
+	left: -100px;
+	
+}
+.dress .bd li:nth-child(3) .dress_title{
+	left: 350px;
+}
+
+.dress .bd li:nth-child(1):hover .dress_title,
+.dress .bd li:nth-child(2):hover .dress_title,
+.dress .bd li:nth-child(3):hover .dress_title{
+	opacity: 1;
+	top: 250px;
+	left: 20px;
+}
+.dress .bd li:nth-child(1):hover img{
+	/* transform-origin:center top; */
+	transform: translateY(50px) scale(1.5);
+}
+.dress .bd li:nth-child(3):hover img{
+	transform: translateY(80px) scale(1.5);
+	
+}
+
+/* marriageStrategy 备婚攻略 */
+.marriageStrategy .left{
+	margin-top: 20px;
+	margin-left: 16px;
+	padding: 0 10px;
+	float: left;
+	width: 620px;
+	height: 595px;
+	background: url(../images/bgred.jpg) repeat-x top left #fff;
+}
+
+.marriageStrategy .left h6,
+.marriageStrategy .right h6{
+	position: relative;
+	margin-left: 30px;
+	/* padding是用来拉开 与ico的距离 */
+	padding-left: 38px;
+	height: 80px;
+	/* background-color: red; */
+	line-height: 70px;
+	font-size: 20px;
+	font-weight:550;
+	
+}
+.marriageStrategy .left h6::before,
+.marriageStrategy .right h6::before{
+	position: absolute;
+	top: 20px;
+	left: 0;
+	content: '';
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/排行.png);
+	background-position: center;
+	background-size: contain;
+}
+.marriageStrategy .right h6::before{
+	background-image: url(../images/News.png);
+}
+.marriageStrategy .left li{
+	position: relative;
+	margin: 0 28px 26px 28px;
+	height: 48px;
+
+}
+.marriageStrategy li a{	
+	font-size: 17px;
+	font-weight: 550;
+	transition: color 0.35s;
+}
+.marriageStrategy li a:hover{
+	color: #f83244;
+}
+.marriageStrategy .left li .num{
+	margin-right: 20px;
+	font-size: 20px;
+	color: #f83244;
+	font-weight: 650;
+}
+.marriageStrategy .left li:nth-child(n+4) .num{
+	color: #666;
+}
+
+.marriageStrategy .left .label1,
+.marriageStrategy .left b{
+	position: absolute;   /* 有定位就不用 display 了 */
+	top: 34px;
+	left: 34px;
+	
+	padding: 0px 5px;
+	background-color: rgba(255, 233, 223, 0.3);
+	border: 1px #fe7e33 solid;
+	color: #fe7e33;
+	font-weight: 400;
+	font-size: 10px;
+}
+.marriageStrategy .left b{
+	left: 100px;
+	background-color:  #eff7ff;
+	color: #13acec;
+	border: none;
+}
+.marriageStrategy .right{
+	position: relative;
+	margin-top: 20px;
+	margin-right: 16px;
+	
+	float: right;
+	width: 620px;
+	height: 595px;
+	background-color: pink;
+	background: url(../images/bgblue.jpg) repeat-x top left #fff;
+}
+.marriageStrategy .right>a{
+	position: absolute;
+	top: 26px;
+	right: 20px;
+}
+.marriageStrategy .right .photo{
+	margin: 0 30px;
+	height: 170px;
+}
+.marriageStrategy .right .p1{
+	float: left;
+	width: 270px;
+	height: 170px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.marriageStrategy .right img{   /* 修改两个张图图片的宽高比例 所以不用区分是哪张图 */
+	width: 270px;
+	height: 170px;
+	cursor: pointer;
+}
+.marriageStrategy .right .p2{
+	float: right;
+	width: 270px;
+	height: 170px;
+	overflow: hidden;
+	border-radius: 8px;
+}
+.marriageStrategy .right li{
+	position: relative;
+	margin: 20px 0 20px 30px;
+}
+.marriageStrategy .right li a{
+	padding-left: 35px;
+	font-weight: 530;
+}
+.marriageStrategy .right li a::before{
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	background-image: url(../uploads/点.png);
+	background-position: center;
+	background-size: contain;
+} 
+/* End */
+.mainEnd {
+	height: 90px;
+	text-align: center;
+	cursor: pointer;
+}
+.mainEnd p{
+	display: inline-block;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	padding-top: 8px;
+	width: 140px;
+	height: 40px;
+	border: 1px solid black;
+    transition: all .35s;
+}
+.mainEnd p span{
+	/* margin-top: 10px; */
+	font-family: 'Karla';
+	/* font-size: 17px; */
+	/* font-weight: 500; */
+
+}
+.mainEnd p:hover{
+	color: #fff;
+	background-color: #494949;
+}
+
+/* 返回顶部图片 */
+.backtotop{
+	height: 115px;
+	/* background-color: skyblue; */
+	text-align: center;
+}
+.backtotop span{
+	display: inline-block;
+	/* margin-top: 30px; */
+	margin-top: 33px;
+	margin-bottom: 26px;
+	width: 60px;
+	height: 60px;
+	background-image: url(../images/backtotop.png);
+	background-position: center center;
+	background-size: contain;
+	cursor: pointer;
+}

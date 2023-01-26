@@ -1,0 +1,313 @@
+/* 各个页面相同的样式表 : 头, 尾部 */
+/* 版心居中 ,需要时调用即可*/
+.wrapper {
+	width: 1300px;
+	margin: 0 auto;
+}
+
+/* 快捷导航 */
+.shortcut{
+	height: 36px;
+	background-color: #f5f5f5;
+}
+/* 目的: 所有的文字内容居右侧对齐 */
+.shortcut .wrapper .topright {
+    float: right;
+}
+.shortcut .wrapper .topleft{
+    float: left;
+}
+.shortcut .topleft .special{
+	color: hotpink;
+	font-size: 14px;
+}
+/* 目的: 让所有的文字在一行显示 */
+.shortcut .wrapper li{
+	float: left;
+	/* line—height给父级元素加就行了 */
+	line-height: 36px;
+}
+.shortcut .wrapper a {
+	padding: 0 15px;
+	font-size: 12px;
+	color: #666;
+	cursor: pointer;
+	transition: color 0.35s;
+}
+.shortcut .wrapper a:hover{
+	color: #f83244;
+}
+.shortcut .wrapper .topleft a span{
+	display: inline-block;
+	margin-left: 5px;
+	margin-bottom: 3px;
+	width: 9px;
+	height: 12px;
+	/* background-color: pink; */
+	background-image: url(../images/o_1cv02q3ep1jae1os0snrn4v5i89.png);
+	background-size: 100%;
+	vertical-align: middle;
+}
+/* 单独给倒数第二个加 小短线 */
+.shortcut .wrapper .topright li:nth-child(3n) a {
+	border-right:1px #989898 solid;
+}
+
+/* 头部 */
+.header_bgc{
+	/* background-color: #fff; */
+	background-color: rgba(255,255,255,.9);
+	
+}
+.header{
+	position: relative;
+	height: 90px;
+	/* background-color: pink; */
+	/* overflow: hidden; */
+	margin: 0 auto;
+}
+/* 头部中logo */
+.header h1{
+	/* float:left; */
+	position: absolute;
+	top: 8px;
+	left: 1px;
+	
+	width: 140px;
+	height: 70px;
+	/* margin: 10px 57px 5px -196px; */
+}
+.header h1  img{
+	float: left;
+	width: 140px;
+	height: 70px;
+}
+/* 头部中导航 */
+.nav{
+	position: absolute;
+	top: 1px;
+	left: 210px;
+	/* float: left; */
+	/* 与logo拉开50像素的距离 */
+	/* margin-left: 50px; */
+	height: 70px;
+	margin-top: 5px;
+}
+.nav>ul>li{
+	position: relative;
+	float: left;
+	margin-right: 16px;
+}
+.nav>ul>.father>a{
+	margin-right: 15px;
+	padding-right: 12px;
+	text-align: center;
+}
+.nav .father .son li{
+	float: left;
+	/* background-color: skyblue; */
+}
+
+/* 小下标 */
+.nav .father::after{
+	position: absolute;
+	content: '';
+	top: 33px;
+	right: 9px;
+	width: 9px;
+	height: 5px;
+	background-image: url(../images/下标.png);
+}
+.nav .father:hover::after{
+	transform: rotate(-180deg);;
+}
+/* 隐藏二级菜单栏 */
+.nav .father{
+	position: relative;
+}
+.nav .father a:hover{
+	border: none;
+}
+.nav .father .son{
+	display: none;
+	position: absolute;
+	z-index: 2;
+	background-color: #fff;
+	top: 56px;
+	left: 0;
+}
+.nav .father:hover .son{
+	display: block;
+}
+.nav .father .son li a{
+	float: left;
+	text-align: center;
+	width: 85px;
+	height: 30px;
+	
+	color: gray;
+	font-size: 14px;
+	border: none;
+	transition: color 0.35s;
+}
+.nav .father .son li a:hover{
+	color: #f83244;
+}
+.nav>ul>li>a{
+	position: relative;
+	padding: 10px 9px 10px;
+	height: 70px;
+	line-height: 70px;
+	color: #000;
+	font-size: 16px;
+	transition: color 0.35s;
+}
+.nav li a:hover{
+	color: #f83244;
+	/* border-bottom: 2px #f83244 solid; */
+}
+.nav>ul>li>a::after {
+	position: absolute;
+	top: 40px;
+	display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f83244;
+	transition-delay: .3s;
+	transition: width .2s ease;
+	/* 下面是针对浏览器兼容 */
+    -webkit-transition-delay: .3s;
+	-webkit-transition: width .2s ease;
+    
+}
+.nav>ul>li>a:hover::after {
+	width: 100%;
+    transition: width .35s ease;
+	transition-delay: .15s;
+	/* 下面是针对浏览器兼容 */
+    -webkit-transition-delay: .15s;
+	-webkit-transition: width .35s ease;
+}
+/* 单独设置下划线为无 */
+.nav li .lineNone::after{
+	display: none;
+}
+/* 头部搜索栏 */
+.search{
+	position: absolute;
+	top: 0;
+	right: 0px;
+	/* float: right; */
+	margin-top: 25px;
+	margin-right: 10px;
+	
+	width: 182px;/* 152 + 30 */
+	height: 35px;
+	/* background-color: red; */
+}
+.search input{
+	/* 文字小间距加给input而不是加给placehoder，光标闪烁位置不一样 */
+	float: left;
+	padding-left: 8px;	
+	float: left;
+	width: 150px;
+	height: 35px;
+	border: 1px solid brown;
+}
+.search input::placeholder{
+	line-height: ;
+	font-size: 12px;
+	color: #ccc;
+	}
+/* .search span */
+
+.search button{
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background: #f83244 url(../images/o_1crmn06c31j09j1i1smb1rqudejj.png) no-repeat center center ;
+	border: none;
+}
+
+
+
+/* 页脚 */
+.footer {
+	padding-top: 50px;
+	height: 330px;
+	background-color: #f1ebe9;
+}
+.footer .middle,
+.footer .social,
+.footer .shop,
+.footer .app{
+	float: left;
+	width: 160px;
+	height: 190px;
+	margin-left: 90px;
+}
+.footer .right{
+	margin-left: 90px;
+	float: left;
+	width: 70px;
+	height: 190px;
+}
+.footer .middle h4,
+.footer .right h4,
+.footer .social h4,
+.footer .shop h4,
+.footer .app h4{
+	padding:5px 0;
+	font-size: 16px;
+	font-weight: 600;
+}
+.footer .middle li,
+.footer .right li,
+.footer .social li,
+.footer .shop li{
+	float: left;
+	width: 75px;
+	height: 28px;
+	padding-top: 3px;
+	font-size: 14px;
+}
+.footer .middle li a,
+.footer .right li a,
+.footer .social li a,
+.footer .shop li a{
+	color: #555555;
+	transition: color 0.35s;
+}
+.footer li a:hover{
+	color: #f83244;
+}
+.footer .app img{
+	width: 100px;
+}
+.footer .top{
+	height: 210px;
+	padding-top: 20px;
+	border-top: 1px solid #83807e;
+	border-bottom: 1px solid #83807e;
+}
+.footer p{
+	color: gray;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+

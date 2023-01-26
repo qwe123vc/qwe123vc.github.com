@@ -1,0 +1,197 @@
+/* siluetas-intro */
+.siluetas-intro{
+	margin-top: 20px;
+	height: 700px;
+	/* text-align: center; */
+}
+.siluetas-intro h3,
+.hotDress h3{
+	text-align: center;
+	font-family:"Karla" ;
+	font-weight: 450;
+	font-size: 30px;
+}
+.siluetas-intro>p{
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+}
+.siluetas-intro .siluetasMain{
+	margin: 15px auto 20px;
+	padding: 20px;
+	width: 1134px;
+	background-color: #fff;
+}
+.siluetas-intro .siluetas{
+	margin: 0 auto;
+	width: 900px;
+	height: 500px;
+	/* background: skyblue; */
+}
+.siluetas-intro .siluetas>div{
+	position: relative;
+	float: left;
+	
+	margin-left: 30px;
+	width: 280px;
+	height: 500px;
+	/* background-color: pink; */
+	text-align: center;
+}
+.siluetas-intro .siluetas .princess{
+	margin-left: 0;
+}
+.siluetas-intro .princessMask,
+.siluetas-intro .fishMask,
+.siluetas-intro .A_Mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	width: 280px;
+	height: 353.23px;
+	background-color: rgba(255, 255, 255, 0);
+	transition: background-color .4s;
+	cursor: pointer;
+}
+.siluetas-intro .princess .princessMask:hover,
+.siluetas-intro .fish .fishMask:hover,
+.siluetas-intro .A .A_Mask:hover{
+	background-color: rgba(255, 255, 255, .4);
+}
+.siluetas-intro .siluetas img{
+	width: 280px;
+	vertical-align: top;
+}
+.siluetas-intro .siluetas h5{
+	margin: 8px 0;
+	font-size: 20px;
+	font-weight: 400;
+	transition: color .35s;
+	cursor: pointer;
+}
+.siluetas-intro .siluetas h5:hover{
+	color: #f83244;
+}
+.siluetas-intro .siluetas p{
+	text-align: left;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.6;
+	/* text-indent: 2em; */
+}
+
+/* hotDress */
+.hotDress{
+	height: 1200px;
+	margin-top: 8px;
+	background-color: #fff;
+}
+.hotDress h3{
+	position: relative;
+	/* text-align: left; */
+	padding-top: 18px;
+	font-size: 28px;
+}
+.hotDress h3>a{
+	position: absolute;
+	right: 110px;
+	top: 45px;
+	
+	font-size: 14px;
+	transition: color .35s;
+	cursor: pointer;
+}
+.hotDress h3>a:hover{
+	color: #f83244;
+}
+.hotDress ul{
+	width: 1134px;
+	height: 930px;
+	margin: 0 auto;
+}
+.hotDress ul li{
+	position: relative;
+	
+	float: left;
+	margin-right: 80px;
+	margin-top: 28px;
+	width: 220px;
+	height: 330px;
+	overflow: hidden;
+	border-radius: 2px;
+}
+.hotDress ul li:nth-child(4n){
+	margin-right: 0px;
+}
+.hotDress ul li img{
+	transition: all ease .5s;
+	width: 220px;
+}
+.hotDress ul li:nth-child(n):hover img{
+	transform: translateY(20px) scale(1.2);
+}
+.hotDress ul li .big{
+	width: 280px;
+}
+.hotDress ul .mask{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	
+	width: 220px;
+	height:  38px;
+	text-align: center;
+	line-height: 38px;
+	font-size: 14px;
+	background-color: rgba(255, 255, 255, 0);
+	color: transparent;
+	
+	transition: all .55s;
+	cursor: pointer;
+	
+	
+}
+.hotDress ul li:nth-child(n):hover .mask{
+	background-color: rgba(255, 255, 255, .5);
+	color: black;
+	
+}
+.hotDress ul li:nth-child(n) .mask:hover{
+	color: #a17f7f;
+}
+.hotDress ul .hotTop{
+	position: absolute;
+	top: 18px;
+	left: -8px;
+	
+	width: 40px;
+	height: 20px;
+	background-color: rgba(255 ,255 ,255 ,.9);
+	line-height: 20px;
+	/* color: ; */
+	font-size: 12px;
+	text-align: center;
+}
+
+/* 返回顶部图片 */
+.backtotop{
+	height: 115px;
+	/* background-color: skyblue; */
+	text-align: center;
+}
+.backtotop span{
+	display: inline-block;
+	/* margin-top: 30px; */
+	margin-top: 33px;
+	margin-bottom: 26px;
+	/* padding-top: 5px; */
+	width: 60px;
+	height: 60px;
+	background-image: url(../images/backtotop.png);
+	background-position: center center;
+	background-size: contain;
+	cursor: pointer;
+}
+
+
